@@ -2,3 +2,4 @@
 ![Admin](https://github.com/user-attachments/assets/c491038f-b0af-4b4c-9cdf-efcaa0e0a10e)
 ![Student](https://github.com/user-attachments/assets/0acd6f29-7d86-4236-be8f-7e2b0bc4dcd7)
 ![student course registration](https://github.com/user-attachments/assets/f100c156-6860-45b3-9322-55c82f9b3a6a)
+![Admin Courses](https://github.com/user-attachments/assets/057dd791-ac10-4d60-b82e-d5db7582ebb7)
