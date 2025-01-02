@@ -1,0 +1,41 @@
+.s {
+  color: white;
+  font-size: 70px;
+  padding-left: 60px;
+}
+
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background: url(./background.jpg);
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0px;
+}
+button {
+  padding: 0px 30px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: white;
+}
+.A {
+  font: bold;
+  font-size: 20px;
+}
+.set {
+  background: url(studentbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 850px;
+}

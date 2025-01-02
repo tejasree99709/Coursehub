@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Login / Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body class="f" style="background-image: url(https://i.pinimg.com/736x/8a/4e/98/8a4e984d718bd48aba05ca8b72f27025.jpg)">
+    <h1 class="c">COURSEHUB</h1>
+    <button class="signup" type="button" id="signupButton">Sign up</button>
+    <div class="h">
+      <div class="container">
+        <!-- Login Form -->
+        <form class="form" id="login" action="login.php" method="POST">
+          <h1 class="form__title">Login</h1>
+          <div class="form_message form_message--error"></div>
+          <div class="form__input-group">
+            <input
+              type="text"
+              name="username"
+              class="form__input"
+              autofocus
+              placeholder="Username or email"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <input
+              type="password"
+              name="password"
+              class="form__input"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="btn">
+            <button
+              class="form__button"
+              name="role"
+              value="student"
+              type="submit"
+            >
+              Login as Student
+            </button>
+            <button
+              class="form__button"
+              name="role"
+              value="admin"
+              type="submit"
+            >
+              Login as Admin
+            </button>
+          </div>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form
+          class="form form--hidden"
+          id="createAccount"
+          action="signup.php"
+          method="POST"
+        >
+          <h1 class="form__title">Create Account</h1>
+          <div class="form__input-group">
+            <input
+              type="text"
+              name="username"
+              class="form__input"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <input
+              type="password"
+              name="password"
+              class="form__input"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form__input-group">
+            <input
+              type="password"
+              name="confirm_password"
+              class="form__input"
+              placeholder="Confirm password"
+              required
+            />
+          </div>
+          <button class="form__button" type="submit">Create Account</button>
+          <p class="form__text">
+            <a class="form__link" href="#" id="linkLogin"
+              >Already have an account? Sign in</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Toggle between login and sign-up forms
+      document
+        .getElementById("signupButton")
+        .addEventListener("click", function () {
+          document.getElementById("login").classList.add("form--hidden");
+          document
+            .getElementById("createAccount")
+            .classList.remove("form--hidden");
+        });
+
+      document
+        .getElementById("linkLogin")
+        .addEventListener("click", function () {
+          document
+            .getElementById("createAccount")
+            .classList.add("form--hidden");
+          document.getElementById("login").classList.remove("form--hidden");
+        });
+    </script>
+  </body>
+</html>

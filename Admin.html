@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Admin.css" />
+    <title>Admin Page</title>
+    <style>
+      /* Transition effect */
+      body.fade-out {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+    </style>
+  </head>
+  <body class="b" style="background-image: url(https://i.pinimg.com/736x/90/a6/04/90a6044902e1a51a1979384a1a23dfe8.jpg)">
+    <header>
+      <h1>Admin</h1>
+      <div style="display: flex; gap: 20px;">
+        <!-- Updated Post button to redirect to post_courses.html -->
+        <a class="A" href="pcourses.php"><button>Post Courses</button></a>
+        <!-- Status button to redirect to status.html -->
+        <a class="A" href="status.php"><button>Status</button></a>
+        <!-- Logout button with transition -->
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <script>
+      // Logout function with transition
+      function logout() {
+        // Add fade-out class to body
+        document.body.classList.add("fade-out");
+
+        // Redirect to login.html after the transition
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 800); // Match the duration of the transition (0.8s)
+      }
+    </script>
+  </body>
+</html>

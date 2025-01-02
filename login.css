@@ -1,0 +1,324 @@
+/* General styles for the page background */
+body.f {
+  background-image: url("https://i.pinimg.com/736x/81/80/f5/8180f5671b11ba045af9fb886b54713a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh; /* Ensures the body takes full viewport height */
+  display: flex; /* Flex layout for centering */
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+}
+
+/* Title styling */
+.c {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Sign-up button styling */
+.signup {
+  width: auto;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #040007;
+  border: 2px solid violet;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  text-align: center;
+  position: absolute;
+  top: 75px;
+  right: 50px;
+}
+
+.signup:hover {
+  background-color:#134c8d;
+}
+
+/* Centering the container */
+.h {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Semi-transparent form container styling */
+.container {
+  width: 400px;
+  max-width: 90%;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+  text-align: center;
+  margin-left: 575px;
+}
+
+/* Form title */
+.form__title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #252c6a;
+}
+
+/* Input group styles */
+.form__input-group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  background: #eeeeee;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.form__input:focus {
+  border-color: #7195be;
+  background: rgba(255, 255, 255, 0.8);;
+}
+
+.form__input--error {
+  border-color: #cc3333;
+}
+
+.form__input-error-message {
+  font-size: 0.85rem;
+  color: #cc3333;
+  margin-top: 0.5rem;
+}
+
+/* Button styles */
+.btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form__button {
+  width: 45%;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #7195be;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.form__button:hover {
+  background: white;
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+/* Text and link styling */
+.form__text {
+  margin-top: 1rem;
+}
+
+.form__link {
+  color: #252c6a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+.c {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+.signup {
+  width: 6%;
+  padding: 0.6rem 0.4rem;
+
+  font-weight: 50;
+  font-size: 1.1rem;
+  color: rgb(4, 0, 7);
+  border: violet;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  transition: background 0.2s, border-color 0.2s;
+  text-align: center;
+  position: absolute;
+  top: 75px;
+  right: 50px;
+}
+
+.h {
+  --color-primary: #7195be;
+  --color-primary-dark: #2e8ed8;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: url(./background.jpg);
+  background-size: cover;
+}
+.container {
+  width: 400px;
+  max-width: 300px;
+  margin-right: auto;
+  padding: 2rem;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.8); /* White with transparency */
+}
+
+.container,
+.form__input,
+.form__button {
+  font: 500 1rem "Quicksand", sans-serif;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__message--success {
+  color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
+
+.form__input-group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form__button {
+  width: 50%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+}
+.signup:hover {
+  background: var(--color-primary-dark);
+  background-color:#2e8ed8;
+}
+.f {
+  background: url(https://i.pinimg.com/736x/5f/5e/88/5f5e88fcb767063a70727698e59636c9.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 850px;
+}

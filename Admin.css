@@ -1,0 +1,50 @@
+/* Link styling */
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Header styling */
+h1 {
+  color: white;
+  font-size: 50px;
+  padding-left: 75px;
+}
+
+/* Background styling */
+.b {
+  background: url(Adminbg.jpg);
+  background-repeat: no-repeat;
+  background-size: 1550px 850px;
+}
+
+/* Header layout styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0px;
+}
+
+/* Button styling */
+button {
+  padding: 12px 27px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: black; /* Ensure font color is black */
+  font-size: larger;
+  font-family: sans-serif; /* Consistent font style */
+  font-weight: 500; /* Consistent font weight */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+  color: black; /* Keep the text black on hover */
+}

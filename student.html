@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="student.css" />
+    <title>Student Page</title>
+    <style>
+      /* Transition effect */
+      body.fade-out {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+    </style>
+  </head>
+  <body class="set" style="background-image: url(https://i.pinimg.com/736x/2b/09/35/2b09356fde6c25ece4b336c469f950b5.jpg)">
+    <header>
+      <h1 class="s">Student</h1>
+      <div style="display: flex; gap: 20px">
+        <!-- Updated Courses Button -->
+        <a class="A" href="courses.php">
+          <button><h3>Courses</h3></button>
+        </a>
+        <!-- Updated Logout Button -->
+        <button onclick="logout()"><h3>Logout</h3></button>
+      </div>
+    </header>
+    <script>
+      // Logout function with transition
+      function logout() {
+        // Add fade-out class to body
+        document.body.classList.add("fade-out");
+
+        // Redirect to login.html after the transition
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 800); // Match the duration of the transition (0.8s)
+      }
+    </script>
+  </body>
+</html>
