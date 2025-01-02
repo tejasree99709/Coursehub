@@ -4,3 +4,4 @@
 ![student course registration](https://github.com/user-attachments/assets/f100c156-6860-45b3-9322-55c82f9b3a6a)
 ![Admin Courses](https://github.com/user-attachments/assets/057dd791-ac10-4d60-b82e-d5db7582ebb7)
 ![post courses](https://github.com/user-attachments/assets/be297c34-7491-46f7-8852-85194e5b3e0d)
+![status](https://github.com/user-attachments/assets/a91e63ad-3482-433b-a7f3-6514fb56844e)
