@@ -10,10 +10,12 @@ Follow these steps to set up the project locally:
 1. Clone the Repository
 git clone https://github.com/tejasree99709/Coursehub.git
 cd Miniproject
+
 2. Set Up the Database
 Start your local server using XAMPP, WAMP, or MAMP.
 Open phpMyAdmin and create a new database named coursehub.
 **Import the SQL file to set up the tables:**
+
 CREATE DATABASE coursehub;
 USE coursehub;
 CREATE TABLE users (
@@ -21,19 +23,22 @@ CREATE TABLE users (
    username varchar(50) NOT NULL,
    email varchar(100) NOT NULL,
    password varchar(255) NOT NULL
-) 
+);
+
 CREATE TABLE courses (
    id int(11) NOT NULL,
    course_name varchar(255) NOT NULL,
    course_link varchar(255) NOT NULL
-)
+);
+
 CREATE TABLE student_registration(
    id int(11) NOT NULL,
    user_id int(11) NOT NULL,
    course_id int(11) NOT NULL,
    is_registered tinyint(1) NOT NULL DEFAULT 0,
    certificate_link varchar(255) DEFAULT NULL
-)
+);
+
 3. Run the Application
 Open a web browser and navigate to http://localhost:8080/Miniproject
 
